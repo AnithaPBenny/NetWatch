@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Traffic Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-section">
+        <h1 class="header-title">Network Traffic Analyzer</h1>
+        <a href="#" class="documentation-btn">Documentation</a>
+    </header>
+    <div class="top-bar">
+        <div class="options">
+            <button class="capture-btn">Begin Capture</button>
+            <button class="capture-btn">End Capture</button>
+        </div>
+        <div class="info">
+            Packet Count: <span id="packet-count">0</span>
+            Dropped Packets: <span id="dropped-packets">0</span>
+        </div>
+    </div>
+    <div class="filter-options">
+        <input type="text" placeholder="Filter by Source IP"><br><br>
+        <input type="text" placeholder="Filter by Destination IP"><br><br>
+        <select id="protocolInput" onchange="selectProtocol(this.value)">
+            <option value="" disabled selected>Select Protocol</option>
+            <option value="TCP">TCP</option>
+            <option value="UDP">UDP</option>
+        </select>
+    </div>
+    <div class="main-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Protocol</th>
+                    <th>Length</th>
+                    <th>Info</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="highlighted">
+                    <!-- <td>12:34:56</td>
+                    <td>192.168.1.1</td>
+                    <td>10.0.0.1</td>
+                    <td>TCP</td>
+                    <td>120</td>
+                    <td>Example packet info</td> -->
+                </tr>
+                <tr>
+                    <!-- <td>12:35:02</td>
+                     <td>10.0.0.2</td>
+                    <td>192.168.1.1</td>
+                    <td>UDP</td>
+                    <td>80</td>
+                    <td>Another packet info</td> --> 
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+.header-section {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 36px;
+    margin: 0;
+}
+
+.documentation-btn {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.documentation-btn:hover {
+    background-color: #777;
+}
+
+/* Styles for top bar */
+.top-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styles for filter options */
+.filter-options input[type="text"],
+.filter-options select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.filter-options select {
+    /* Additional styling for select element */
+    width: 100%;
+}
+
+
+/* Styles for main section */
+.main-section {
+    margin-top: 20px;
+}
+
+/* Styles for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr.highlighted {
+    background-color: #f0f0f0;
+}
